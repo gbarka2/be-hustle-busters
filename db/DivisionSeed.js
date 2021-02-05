@@ -1,5 +1,5 @@
 const mongoose = require('../db/connection')
-const User = require('../models/Division')
+const Division = require('../models/Division')
 const db = mongoose.connection
 const manyDivisions = require('./DivisionSeed.json')
 
