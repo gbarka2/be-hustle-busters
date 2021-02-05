@@ -1,0 +1,33 @@
+{
+  "name": "be-hustle-busters",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "cross-env NODE_ENV=development node server.js",
+    "dev": "cross-env NODE_ENV=development nodemon server.js",
+    "user:seed": "node ./db/UserSeed.js",
+    "lead:seed": "node ./db/LeadSeed.js",
+    "division:seed": "node ./db/Division.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gbarka2/be-hustle-busters.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gbarka2/be-hustle-busters/issues"
+  },
+  "homepage": "https://github.com/gbarka2/be-hustle-busters#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "cross-env": "^7.0.3",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.11.15",
+    "morgan": "^1.10.0"
+  }
+}
