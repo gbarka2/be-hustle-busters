@@ -8,7 +8,7 @@ const userSchema = new Schema (
     email: String,
     password: String,
     userName: String,
-    phone: Number,
+    phone: String,
     address: {
         street: String,
         city: String,
