@@ -12,12 +12,14 @@ NODE_ENV === 'production' ? app.use(cors(corsOptions)) : app.use(cors())
 app.use(express.json())
 app.use(morgan('tiny'))
 
-app.get('/', (req, res) => {
-  res.json({hello: 'Hello World!'})
-})
+const UserRouter = require('./controllers/User')
+app.use('/username/', UserRouter)
 
+const DivisionRouter = require('./controllers/Division')
+app.use('/division/', DivisionRouter)
 
-
+const LeadRouter = require('./controllers/Lead')
+app.use('/leads/', LeadRouter)
 
 app.listen(PORT, () => {
   console.log(`You are listening on port ${PORT}!`)
