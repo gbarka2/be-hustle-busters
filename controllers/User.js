@@ -13,6 +13,15 @@ router.post('/', async(req,res) => {
     res.json(await User.create(req.body))
 })
 
+// UPDATE A USER
+router.put("/:id", (req, res) => {
+    User.findOneAndUpdate({ _id: req.params.id }, req.body).then(
+      (user) => {
+        res.json(user);
+      }
+    );
+  }); 
+
 // GET A SINGLE USER BY _id
 router.get('/:id', (req,res) => {
     User.find({_id: req.params.id})
@@ -24,8 +33,10 @@ router.get('/:id', (req,res) => {
 
 
 // DESTROY A USER
-router.delete('./:id', async (req, res) => {
-    res.json(await User.findByIdAndRemove(req.params.id))
+router.delete('/:id', async (req, res) => {
+    User.deleteOne({_id: req.params.id}).then((user) => {
+        res.json(user)
+    })
 })
 
 

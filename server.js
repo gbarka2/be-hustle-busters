@@ -13,10 +13,10 @@ app.use(express.json())
 app.use(morgan('tiny'))
 
 const UserRouter = require('./controllers/User')
-app.use('/username/', UserRouter)
+app.use('/usernames/', UserRouter)
 
 const DivisionRouter = require('./controllers/Division')
-app.use('/division/', DivisionRouter)
+app.use('/divisions/', DivisionRouter)
 
 const LeadRouter = require('./controllers/Lead')
 app.use('/leads/', LeadRouter)

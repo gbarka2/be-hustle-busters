@@ -17,16 +17,29 @@ router.get('/:id', (req,res) => {
     })
 })
 
-// DESTROY A DIVISION
-router.delete('./:id', async (req, res) => {
-    res.json(await Division.findByIdAndRemove(req.params.id))
-})
-
-
 // CREATE A DIVISION
 router.post('/', async(req,res) => {
     res.json(await Division.create(req.body))
 })
+
+//UPDATE A DIVISION
+router.put("/:id", (req, res) => {
+    Division.findOneAndUpdate({ _id: req.params.id }, req.body).then(
+      (division) => {
+        res.json(division);
+      }
+    );
+  }); 
+
+// DESTROY A DIVISION
+router.delete('/:id', async (req, res) => {
+    Division.deleteOne({_id: req.params.id}).then((division) => {
+        res.json(division)
+    })
+})
+
+
+
 
 
 module.exports = router

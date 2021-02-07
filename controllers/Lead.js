@@ -20,18 +20,31 @@ router.get('/:id', (req,res) => {
     })
 })
 
-
-
-//DESTROY A LEAD
-router.delete('./:id', async (req, res) => {
-    res.json(await Lead.findByIdAndRemove(req.params.id))
-})
-
-
 // CREATE A LEAD
 router.post('/', async(req,res) => {
     res.json(await Lead.create(req.body))
 })
+
+
+//UPDATE A LEAD
+router.put("/:id", (req, res) => {
+    Lead.findOneAndUpdate({ _id: req.params.id }, req.body).then(
+      (lead) => {
+        res.json(lead);
+      }
+    );
+  });
+
+
+//DESTROY A LEAD
+router.delete('/:id', async (req, res) => {
+    Lead.deleteOne({_id: req.params.id}).then((lead) => {
+        res.json(lead)
+    })
+})
+
+
+
 
 
 module.exports = router
