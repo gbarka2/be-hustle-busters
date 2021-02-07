@@ -1,0 +1,14 @@
+{
+    "firstName": "Giedrius",
+    "lastName": "Guerrero",
+    "email": "gguerrero@hustlebusters.com",
+    "password": "veryConfidental123",
+    "userName": "hustlerOGG3",
+    "phone": "718-739-4455",
+    "address": {
+        "street": "357 South Acacia Avenue",
+        "city": "Staten Island",
+        "state": "New York",
+        "country": "United States"
+    }
+}
