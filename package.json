@@ -9,7 +9,7 @@
     "dev": "cross-env NODE_ENV=development nodemon server.js",
     "user:seed": "node ./db/UserSeed.js",
     "lead:seed": "node ./db/LeadSeed.js",
-    "division:seed": "node ./db/Division.js"
+    "division:seed": "node ./db/DivisionSeed.js"
   },
   "repository": {
     "type": "git",
