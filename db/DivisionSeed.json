@@ -1,5 +1,17 @@
+[
 {
     "name": "Barkauski, Solomon, Lemons LLC",
     "motto": "Three Members, Three Solutions",
     "img": "https://files.slack.com/files-pri/T0351JZQ0-F01M7K04DUK/image.png"
+},
+{
+    "name":"Keohan, Merced, Cruz GA",
+    "motto": "Did you console log it?",
+    "img": "https://atlantaservicejam.files.wordpress.com/2016/02/general-assembly-logo-600.gif"
+},
+{
+    "name": "Bueller, Frye, Peterson FBDO",
+    "motto": "Life moves pretty fast. If you don't stop and look around once in a while, you could miss it.",
+    "img":  "https://static3.srcdn.com/wordpress/wp-content/uploads/2019/05/Ferris-Buellers-Day-Off.jpg"
 }
+]

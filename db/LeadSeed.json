@@ -1,3 +1,4 @@
+[
 {
     "contactName": "Christopher Walken",
     "companyName": "Blankets-R-Us",
@@ -10,4 +11,31 @@
     "estimatedRevenue": "5,000,000",
     "actualRevenue": "500,000",
     "owner": "601dc4dbfccaf22849a990d3"
+},
+{
+    "contactName": "Samuel L. Jackson",
+    "companyName": "Big Kahuna Burger",
+    "division": "6021591e8f87ad08439a1a02",
+    "position": "Divine Intervention",
+    "phone": "555-555-5555",
+    "email": "thisIsATastyBurger@bigKahuna.com",
+    "status": "Speaking",
+    "active": "true",
+    "estimatedRevenue": "5,000,000",
+    "actualRevenue": "500,000,000",
+    "owner": "601dc4dbfccaf22849a990d3"
+},
+{
+    "contactName": "John Travolta",
+    "companyName": "Amsterdam Shipping",
+    "division": "6021591e8f87ad08439a1a03",
+    "position": "Head Pilot",
+    "phone": "555-555-5555",
+    "email": "royaleWithCheese@amShipping.com",
+    "status": "Flying",
+    "active": "true",
+    "estimatedRevenue": "5,000,000",
+    "actualRevenue": "500,000,000",
+    "owner": "601dc4dbfccaf22849a990d3"
 }
+]
