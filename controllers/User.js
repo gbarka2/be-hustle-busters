@@ -14,7 +14,7 @@ router.post('/', async(req,res) => {
 })
 
 // UPDATE A USER
-router.put("/:id", (req, res) => {
+router.put('/:id', (req, res) => {
     User.findOneAndUpdate({ _id: req.params.id }, req.body).then(
       (user) => {
         res.json(user);
