@@ -18,10 +18,10 @@ router.get('/:id', (req,res) => {
 })
 
 // GET A SINGLE DIVISION BY NAME
-router.get('/:name', async (req, res) => {
+router.get('/:name', (req, res) => {
   Division.find({name: req.params.name})
-  .then((divisions) => {
-    res.json(divisions)
+  .then((division) => {
+    res.json(division)
   })
 })
 
