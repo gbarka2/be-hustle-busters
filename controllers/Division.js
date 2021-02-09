@@ -21,7 +21,7 @@ router.get('/:id', (req,res) => {
 router.get('/name/:name', (req, res) => {
   Division.find({name: req.params.name})
   .then((division) => {
-    res.json(division)
+    res.json({status: 200, data: division})
   })
 })
 
