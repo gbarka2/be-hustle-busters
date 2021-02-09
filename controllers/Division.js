@@ -17,6 +17,14 @@ router.get('/:id', (req,res) => {
     })
 })
 
+// GET A SINGLE DIVISION BY NAME
+router.get('/:name', async (req, res) => {
+  Division.find({name: req.params.name})
+  .then((divisions) => {
+    res.json(divisions)
+  })
+})
+
 // CREATE A DIVISION
 router.post('/', async(req,res) => {
     res.json(await Division.create(req.body))
