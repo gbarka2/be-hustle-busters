@@ -4,7 +4,7 @@ const router = Router()
 
 // GET ALL USERS
 router.get('/', async(req, res) => {
-    const allUsers = await User.find({}).populate('leads')
+    const allUsers = await User.find({}).populate("leads")
     res.json({status: 200, data: allUsers})
 }) 
 
@@ -32,7 +32,7 @@ router.put('/:id', (req, res) => {
 
 // GET A SINGLE USER BY _id
 router.get('/:id', (req,res) => {
-    User.find({_id: req.params.id})
+    User.find({_id: req.params.id}).populate("leads")
     .populate("users")
     .then((users) => {
         res.json(users)
