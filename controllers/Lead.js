@@ -8,7 +8,7 @@ const db = mongoose.connection
 
 // GET ALL LEADS
 router.get('/', async(req,res) => {
-    const allLeads = await Lead.find({})
+    const allLeads = await Lead.find({}).populate("divisions")
     res.json({status: 200, data: allLeads})
 })
 // GET A SINGLE LEAD BY _id

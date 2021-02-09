@@ -4,7 +4,7 @@ const router = Router()
 
 // GET ALL DIVISIONS 
 router.get('/', async(req, res) => {
-    const allDivisions = await Division.find({})
+    const allDivisions = await Division.find({}).populate("leads")
     res.json({status: 200, data: allDivisions})
 })
 
