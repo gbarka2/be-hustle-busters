@@ -5,7 +5,6 @@ const leadSchema = new mongoose.Schema (
 {
     contactName: String,
     companyName: String,
-    // division: {ref:'Division', type: mongoose.Schema.Types.ObjectId},
     position: String,
     phone: String,
     email: String,
@@ -13,7 +12,6 @@ const leadSchema = new mongoose.Schema (
     active: {type: Boolean, default: true},
     estimatedRevenue: String,
     actualRevenue: String,
-    // owner: {ref: 'User', type: mongoose.Schema.Types.ObjectId}
 }
 
 )
