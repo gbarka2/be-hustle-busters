@@ -14,7 +14,13 @@ const userSchema = new Schema (
         city: String,
         state: String,
         country: String
-    }
+    },
+    leads: [
+      {
+        ref: "Lead",
+        type: Schema.Types.ObjectId
+      }
+    ]
 }
 
 )
