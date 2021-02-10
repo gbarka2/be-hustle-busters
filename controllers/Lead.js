@@ -22,7 +22,7 @@ router.get('/:id', (req,res) => {
 
 // GET A SINGLE LEAD BY NAME
 router.get('/name/:name', (req, res) => {
-  Lead.find({name: req.params.name})
+  Lead.find({companyName: req.params.name})
   .then((lead) => {
     res.json({status: 200, data: lead})
   })
