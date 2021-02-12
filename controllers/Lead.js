@@ -13,11 +13,19 @@ router.get('/', async(req,res) => {
 })
 // GET A SINGLE LEAD BY _id
 router.get('/:id', (req,res) => {
-    Lead.find({_id: req.params.id})
-    .populate("leads")
-    .then((leads) => {
-        res.json(leads)
-    })
+  Lead.find({_id: req.params.id})
+  .populate("leads")
+  .then((leads) => {
+      res.json(leads)
+  })
+})
+
+// GET A SINGLE LEAD BY NAME
+router.get('/name/:name', (req, res) => {
+  Lead.find({companyName: req.params.name})
+  .then((lead) => {
+    res.json({status: 200, data: lead})
+  })
 })
 
 // CREATE A LEAD
@@ -28,19 +36,19 @@ router.post('/', async(req,res) => {
 
 //UPDATE A LEAD
 router.put("/:id", (req, res) => {
-    Lead.findOneAndUpdate({ _id: req.params.id }, req.body).then(
-      (lead) => {
-        res.json(lead);
-      }
-    );
-  });
+  Lead.findOneAndUpdate({ _id: req.params.id }, req.body).then(
+    (lead) => {
+      res.json(lead);
+    }
+  );
+});
 
 
 //DESTROY A LEAD
 router.delete('/:id', async (req, res) => {
-    Lead.deleteOne({_id: req.params.id}).then((lead) => {
-        res.json(lead)
-    })
+  Lead.deleteOne({_id: req.params.id}).then((lead) => {
+      res.json(lead)
+  })
 })
 
 
