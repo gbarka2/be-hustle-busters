@@ -68,30 +68,33 @@ During the front end build, we assigned ourselves tasks to complete such as the 
 | Task | Priority | EstimatedTime | ActualTime |
 |---|---|---|---|
 | Set up backend database boilerplate | H | 1hr | 30min |
-| Create preliminary schemas | H | 2hr |  |
+| Create preliminary schemas | H | 2hr | 2hr |
 | Set up frontend boilerplate | H | 1hr | 1hr |
-| Render preliminary routes and components | H | 1hr |  |
+| Render preliminary routes and components | H | 1hr | 2hr |
 | Deploy backend to Heroku | H | 1hr | 30min |
 | Deploy frontend to Netlify | H | 1hr | 30min |
-| Add links to Nav | H | 1hr |  |
-| Render leads data to company leads component | H | 3hr |  |
-| Render leads data to division leads component | H | 2hr |  |
-| Render leads data to user leads component | H | 2hr |  |
-| Create userLogin/newUser in Search component | M | 2hr |  |
+| Styling of Nav | H | 1hr | 5hr |
+| Render leads data to company leads component | H | 3hr | 3hr |
+| Render leads data to division leads component | H | 2hr | 5hr |
+| Render leads data to user leads component | H | 2hr | 1hr |
+| Create userLogin/newUser in Login component | M | 2hr | 16hr |
 | Enable a search function Company | H | 3hr | 4hr |
 | Enable a search function in User | H | 2hr | 4hr |
-| Enable a search function in Division | H | 2hr | 0 |
-| Enable update of leads | H | 3hr | 0 |
-| Enable update of user | H | 3hr | 5hr |
-| Render About | L | 1hr | 1hr |
-| Enable responsive design | H | 4hr |  |
-| CSS additions | H | 6hr |  |
-| TOTAL |  | 41hr |  |
+| Enable a search function in Division | H | 2hr | 0hr |
+| Enable update of leads | H | 3hr | 5hr |
+| Enable update of user | H | 3hr | 0hr |
+| Render About Page | L | 1hr | 4hr |
+| Enable responsive design | H | 4hr | 3hr |
+| CSS additions | H | 6hr | 11hr |
+| TOTAL |  | 41hr | 67.5hr |
 
 ## Unsolved Problems
 |Error|
 |---|
 | Two search components used, however the search by division became corrupted after a merge. Unable to resolve at publication |
+| User Authentication working on backend, but ran out of time to problem solve the issues surrounding the front end |
+| CSS on React Bootstrap components was difficult to style |
+
 
 ## Resolved Problems
 
@@ -100,11 +103,16 @@ During the front end build, we assigned ourselves tasks to complete such as the 
 | Search function unable to set the state of the selected lead | Created a new state and applied to search function |
 | Unable to update lead | Error in the props pass down causing the props to fail |
 | Unable to delete lead | Error in the props pass down causing the props to fail |
+| Shoelace components not working | Does not work well with React and switched to React Bootstrap |
+| React Strap not installing | Switched to React Bootstrap |
 
 ## Post-Project Questions
 
+| Questions |
+|---|
+| How do professional teams document their code in a way that all team members use the same naming conventions, formatting, ect? |
+
 ## Credits
 
-- Huge thanks to Alex Merced!
+- Huge thanks to Alex Merced for his instructional videos and the GA TAs!
 - React Bootstrap
-- Sam's Blog Post
